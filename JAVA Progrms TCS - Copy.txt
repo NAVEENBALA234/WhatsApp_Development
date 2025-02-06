@@ -1,6 +1,7 @@
 
 
 // 5 Adding the feature of hiding the last seen
+// 6 Adding the framework
 
 // To print even numbers
 
