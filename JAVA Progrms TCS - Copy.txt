@@ -1,0 +1,665 @@
+
+
+// To print even numbers
+
+int num=100;
+
+for(int i=0;i<num;i++){
+
+if(i%2==0)
+
+sysout(i);
+
+}
+
+}
+
+
+// To print odd numbers
+
+int num=100;
+
+for(int i=0;i<num;i++){
+
+if(i%2!=0)
+
+sysout(i);
+
+}
+
+}
+
+//String reverse
+String name ="Naveen";
+String rev="";
+
+for(int i=0;i<name.length();i++){
+    rev= name.charAt(i)+rev;
+}
+sysout(i);
+
+
+//String reverse using string buffer
+
+String name ="Naveen";
+
+StringBuffer s=new StringBuffer();
+s.append(name);
+
+StringBuffer rev=  s.reverse();
+sysout(rev);
+
+// How to swap two numbers with third variable
+
+int mysalary =10000;
+int manager=50000;
+
+int temp=mysalary;
+
+mysalary=manager;
+manager=temp;
+
+sysout("my salary is "+mysalary+"manager salary is"+manager);
+
+// How to reverse a number
+
+int num =123456789;
+int rev=0;
+
+while(num!=0){
+
+rev= rev*10;
+rev=rev+num%10;
+ num= num/10;
+}
+sysout(rev)
+
+
+// How to find length of the string without using method
+
+String name ="Naveen";
+int length=0;
+
+char[]c=name.tocharArray();
+
+for(char x:c){
+
+length();
+}
+syout(length);
+
+//How to reverse the words in a sentence
+
+String name ="I love india";
+String rev="";
+
+String [] temp  = name.split(" ");
+
+for(int i=temp.length-1;i>=0;i--){
+ rev=rev+temp[i]+" ";
+
+}
+sysout(rev);
+
+//How to find an element present in the array or not
+
+int b[]={1,2,3,4,5};
+int tofind=3;
+
+for(int x:b){
+if(x==tofind){
+sysout("element is present");
+break;
+}
+}
+
+//Find the occurrence of a character in a String
+
+String name ="Naveen";
+char occ='e';
+int count=0;
+
+String temp=name.lowercase();
+for(int i=0;i<temp.length();i++){
+
+if(temp.charAt(i)=='e'){
+    count= count+1;
+}
+}
+
+sysout(count);
+
+//Replace vowels with a special character
+
+String name ="i love dhoni";
+
+char[] temp= name.tocharArray();
+
+for(int i=0;i<temp.length();i++){
+
+if(name.charAt(i)=='a'|| name.charAt(i)=='e' || name.charAt(i)=='i' || name.charAt(i)=='o'
+|| name.charAt(i)=='u'){
+
+temp[i]='*'
+
+}
+}
+
+for(int i=0;i<name.length();i++){
+sysout(temp[i]);
+}
+
+Remove the leading and trailing spaces in a string( front and back space) or using Strip method also we can ignore space
+
+String name ="  naveen Kumar  ";
+
+String temp= name.trim();
+
+sysout(temp);
+
+
+//Find the number of vowels in the given string 
+
+
+String name ="Naveen Kumar";
+
+int count =0;
+
+name=name.lowercase();
+
+for(int i=0;i<nme.length();i+=){
+if(name.charAt(i)=='a' || name.charAt(i)=='e' || name.charAt(i)=='i' || 
+    name.charAt(i)=='o' || name.charAt(i)=='u' || ){
+
+count =count+1;
+
+}
+}
+sysout(count);
+
+ // To print fibonacci
+
+int num1=0, num2=1, num3, count=10;
+
+for(int i=0;i<count;i++){
+
+num3=num1+num2;
+num1=num2;
+num2=num3;
+sysout(num3);
+}
+
+//To check string or Integer palindrome or not
+
+String name="radar";
+String rev="";
+
+for(int i=name.length()-1;i>=0;i--){
+
+      rev=rev+name.charAt(i);
+}
+if(name.equals(rev)){
+sysout("String is palindrome)
+else{
+sysout("Strig is not palindrome")
+}
+
+// factorial Number
+
+int fact=1;
+int count =10;
+
+for(int i=1;i<=count;i++){
+   fact = fact*i;
+}
+sysout(fact);
+
+//To find the given number is prime or not
+int num =7;
+int count =0;
+
+for(int i=1;i<=num;i++){
+
+if(num%i==0){
+count++;
+}
+if(count==2){
+sysout
+else{
+
+// To print duplicate count from string
+
+String nane="naveenKumar"
+int count =0;
+
+char[] temp=  name.tocharArray();
+
+for(int i=0;i<temp.length.i++){
+
+for(int j=i+1;i<temp.length;j++){
+  if(temp[i]==temp[j]]{
+
+sysout(temp[j]);
+count++;
+
+}}}
+Sysout(count);
+
+
+// To print duplicate array
+
+int [] b={1,1,2,3,4};
+
+for(int i=0;i<b.length;i++){
+for(int j=i+1;j<b.length;j++){
+
+if(b[i]==b[j]){
+
+sysout(b[j]);
+
+}
+
+// method overloading 
+
+public void employee(int id){
+sysout("payment in card");
+
+}
+
+public void employee(String st){
+sysout("payment in UPI");
+
+}
+
+public void employee(String st, int id){
+sysout("payment in voucher");
+
+}
+
+Employee e=new Employee();
+e.emplyee("abcd",1234);
+
+// method overriding
+
+class RBI{
+public void checkbalance(){
+sysout("RBI balance");
+
+}
+public void pwdgen(){
+sysout("RBI PWDGEN");
+
+}
+
+class iob extends RBI{
+public void checkbalance(){
+sysout("IOB balance");
+
+}
+public static void main(String[] args){
+iob e=new iob();
+e.pwdgen();
+e.checkbalance();
+
+}
+
+// JDBC connectons
+
+try{
+
+class.forname("com.mysql.jdbc");
+
+Connections c= drivermanager.getconnection("mysql:jdbc:local host 3306//mysql projectname//username// passwprd);
+
+Statement s=  c.createstatement();
+
+result set = s.executequery("select * from tabname);
+
+while(s.next()){
+
+sysout(s.getstring(o)+"\t" s.getstring(1));
+}
+catch(exception e){
+
+}
+
+New program:
+// print event number:
+
+int num=100;
+for(int i=0;i<=num;i++){
+
+if(i%2==0){
+
+sysout(i);
+
+}
+
+}
+
+// print odd number:
+
+int num=100;
+for(int i=0;i<=num;i++){
+
+if(i%2!=0){
+
+sysout(i);
+
+}
+
+}
+
+// String reverse
+
+Sting name="naveen";
+String rev="";
+
+for(int i=0;i<name.length();i++){
+
+rev=name.charAt(i)+rev;
+}
+sysout(rev);
+
+// String reverse using string buffer	
+
+String name="naveen";
+
+StringBuffer s=new StringBuffer();
+s.append(name);
+
+StringBuffer rev=s.reverse();
+sysout(rev);
+
+// How to swap two numbers with third variable
+
+int mysal=10000;
+int super=50000;
+
+int temp=mysal;
+mysal=super;
+super=temp;
+
+sysout("my salary is"+mysal+"mysupervisor salary "+super)
+
+// How to reverse a number
+
+int num=12345678;
+
+int rev=;
+
+while(num!=0){
+
+rev= rev*10;
+rev= rev+num%10
+num= num/10;
+
+}
+sysout(rev)
+
+How to find length of the string
+
+String name="naveen";
+int length;
+
+char[] temp= name.tochararray();
+
+for(charcter x:temp){
+length++;
+}
+sysout(length);
+
+//How to reverse the words in a sentence
+
+String name ="i love naveen";
+
+String rev="";
+
+String [] temp = name.split(" ");
+
+for(int i=temp.length-1;i>=0;i++){
+
+     rev = rev+temp[i]
+
+}
+sysout(rev);
+
+
+//How to find an element present in the array or not
+
+int [] b={1,2,3,4,5};
+
+int tofind=2;
+
+for(int x:b){
+if(x==2){
+sysout("element is present")
+break;
+}
+}
+
+//Find the occurrence of a character in a String
+
+String name="naveen";
+char c='e';
+
+int count;
+
+for(int i=0;i<name.length();i++){
+
+ if( name.charAt(i)==c){
+
+count++;
+
+}
+}
+
+sysout(count);
+
+//Replace vowels with a special character
+
+String name ="i love dhoni";
+
+name = name.lowercase();
+
+char[] temp=name.tocharArray();
+
+for(int i=0;i<given.length();i++){
+  if(given.charAt(i)=='a'|| given.charAt(i)=='e'|| given.charAt(i)=='i'||
+     given.charAt(i)=='o'|| given.charAt(i)=='u'||){
+
+    temp[i]='*';
+
+}
+
+}
+for(int i=0;i<name.length();i++){
+sysout(temp[i]);
+}
+
+//Remove the leading and trailing spaces in a string( front and back space) or using Strip method also we can ignore space
+
+String name ="   i love dhoni     ";
+
+String temp=name.trim();
+
+sysout(temp);
+
+//Find the number of vowels in the given string 
+
+String name ="naveen";
+int count=0;
+
+name= name.lowercase();
+
+for(int i=0;i<name.length();i++){
+
+if(name.charAt(i)=='a'||name.charAt(i)=='e'||name.charAt(i)=='i'||name.charAt(i)=='o'||
+   name.charAt(i)=='u'){
+    count=count+1;
+
+}
+sysout(count);
+
+// To print fibonacci
+
+int num1=0, num2=1, num3, count=10;
+
+for(int i=0;i<=count;i++){
+
+  num3= num1+num2;
+  num1=num2;
+  num2=num3;
+  sysout(num3);
+}
+
+//To check string or Integer palindrome or not
+
+String name="radar";
+
+String rev=;
+
+for(int i=name.length()-1;i>=0;i--){
+
+     rev=rev+name.charAt(i);
+}
+if(name.equals(rev){
+sysout("String is palindrome")
+}
+else{
+sysout("String is not palindrome")
+}
+
+
+// factorial Number
+
+int fact=1;
+
+int count =10;
+
+
+for(int i=1;i<count;i++){
+   fact=fact*i;
+
+}
+sysout(fact);
+
+// To find the given number is prime or not
+
+int num=7;
+int count=0;
+
+
+for(int i=0;i<=7;i++){
+
+if(num%i==0){
+count++;
+
+}
+
+}
+
+if(count==2){
+
+sysout("7 is prime")
+
+}
+else{
+sysout("7 is not prime")
+}
+
+// To print duplicate array
+
+int num[]={1,1,2,2,3,3};
+
+for(int i=0;i<num.length;i++){
+for(int j=i+1;j<num.length;j++){
+
+if(num[i]==num[j]{
+
+sysout(num[j]);
+}
+
+}
+}
+
+
+// To print duplicate from string
+
+Strig name ="SSeelleenniiuumm";
+
+char[] temp=name.tocharArray();
+
+int count=0;
+
+for(int i=0;i<name.length();i++){
+for(int j=i+1;i<name.length();j++){
+
+if(temp[i]==temp[j]){
+sysout(temp[j])
+count ++;
+
+}
+}
+}
+sysout(count)
+
+// how to remove duplicate using set
+
+String name ="naveen";
+
+Set<character> s=new LinkedHashset<>();
+
+for(int i=0;i<name.length();i++){
+  s.add(name.charAt(i);
+
+}
+for(char x:s){
+
+sysout(x)
+
+}
+
+
+// remove duplicate from string 
+
+
+String name ="naveen";
+String result="";
+
+
+for(int i=0;i<name.length();i++){
+ String temp=""+ name.charAt(i);
+if(result.contains(temp){
+
+continue;
+
+}
+ result+=temp;
+
+}
+
+//how to remove dupliates in array
+
+int num[]={1,1,2,2,3,3};
+
+int visited =-1;
+
+for(int i=0;i<num.length;i++){
+
+if(num!=-1){
+
+for(int j=i+1;j<num.length;j++){
+
+if(num[i]==num[j]){
+
+num[j]=viisted;
+
+}
+}
+
+sysout(num[i]);
+}
+}
+
+C:\Users\ACER\Downloads\eclipse-java-oxygen-3a-win32-x86_64
